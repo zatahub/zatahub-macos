@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA02B5E22B63F7600008C3E4 /* ZataHubApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02B5E12B63F7600008C3E4 /* ZataHubApp.swift */; };
+		FA02B5E62B63F7620008C3E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA02B5E52B63F7620008C3E4 /* Assets.xcassets */; };
+		FA02B5E92B63F7620008C3E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA02B5E82B63F7620008C3E4 /* Preview Assets.xcassets */; };
+		FA02B5F42B63F7630008C3E4 /* ZataHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02B5F32B63F7630008C3E4 /* ZataHubTests.swift */; };
+		FA02B60D2B63F7A00008C3E4 /* InstallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02B60C2B63F7A00008C3E4 /* InstallView.swift */; };
+		FA02B6172B63F7F30008C3E4 /* LoginAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02B6162B63F7F30008C3E4 /* LoginAuthView.swift */; };
+		FA02B6192B63F80F0008C3E4 /* MacButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02B6182B63F80F0008C3E4 /* MacButtonStyles.swift */; };
+		FA6DEBCA2B84E7030091B495 /* Glob.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DEBC92B84E7030091B495 /* Glob.swift */; };
+		FA6DEBCC2B84E7260091B495 /* GlobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6DEBCB2B84E7260091B495 /* GlobTests.swift */; };
+		FA8B03252B6517BD001323FC /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = FA8B03242B6517BD001323FC /* ZIPFoundation */; };
+		FA8B91C22B7318F200F6516C /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B91C12B7318F200F6516C /* MockSession.swift */; };
+		FA8B91C72B73270500F6516C /* Mocker in Frameworks */ = {isa = PBXBuildFile; productRef = FA8B91C62B73270500F6516C /* Mocker */; };
+		FA8B91C92B732BA500F6516C /* LocalStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8B91C82B732BA500F6516C /* LocalStorageKeys.swift */; };
+		FAB591862B7626DB00B24A69 /* MockFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB591852B7626DB00B24A69 /* MockFileManager.swift */; };
+		FAD011FE2B6605AB0091C26C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FAD011FD2B6605AB0091C26C /* Alamofire */; };
+		FAD012002B6675B30091C26C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD011FF2B6675B30091C26C /* Device.swift */; };
+		FAF7E9F82B8B7CB80086D26B /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7E9F52B8B7CB80086D26B /* Scene.swift */; };
+		FAF7E9F92B8B7CB80086D26B /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7E9F62B8B7CB80086D26B /* Color+.swift */; };
+		FAF7E9FA2B8B7CB80086D26B /* View+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7E9F72B8B7CB80086D26B /* View+.swift */; };
+		FAF7EA062B8B7CD90086D26B /* AppString.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7E9FD2B8B7CD90086D26B /* AppString.swift */; };
+		FAF7EA072B8B7CD90086D26B /* ZHFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7E9FE2B8B7CD90086D26B /* ZHFont.swift */; };
+		FAF7EA082B8B7CD90086D26B /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF7EA002B8B7CD90086D26B /* Poppins-Light.ttf */; };
+		FAF7EA092B8B7CD90086D26B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF7EA012B8B7CD90086D26B /* Poppins-Medium.ttf */; };
+		FAF7EA0A2B8B7CD90086D26B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF7EA022B8B7CD90086D26B /* Poppins-Regular.ttf */; };
+		FAF7EA0B2B8B7CD90086D26B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF7EA032B8B7CD90086D26B /* Poppins-Bold.ttf */; };
+		FAF7EA0C2B8B7CD90086D26B /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAF7EA042B8B7CD90086D26B /* Poppins-SemiBold.ttf */; };
+		FAF7EA0D2B8B7CD90086D26B /* ZHColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7EA052B8B7CD90086D26B /* ZHColors.swift */; };
+		FAF7EA332B8B815B0086D26B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7EA302B8B815B0086D26B /* LoginView.swift */; };
+		FAF7EA342B8B815B0086D26B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7EA312B8B815B0086D26B /* SignupView.swift */; };
+		FAF7EA352B8B815B0086D26B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7EA322B8B815B0086D26B /* LoadingView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA02B5F02B63F7630008C3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA02B5D62B63F7600008C3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA02B5DD2B63F7600008C3E4;
+			remoteInfo = ZataHub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA02B5DE2B63F7600008C3E4 /* ZataHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZataHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA02B5E12B63F7600008C3E4 /* ZataHubApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZataHubApp.swift; sourceTree = "<group>"; };
+		FA02B5E52B63F7620008C3E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA02B5E82B63F7620008C3E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA02B5EA2B63F7620008C3E4 /* ZataHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZataHub.entitlements; sourceTree = "<group>"; };
+		FA02B5EF2B63F7630008C3E4 /* ZataHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZataHubTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA02B5F32B63F7630008C3E4 /* ZataHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZataHubTests.swift; sourceTree = "<group>"; };
+		FA02B60C2B63F7A00008C3E4 /* InstallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstallView.swift; sourceTree = "<group>"; };
+		FA02B6162B63F7F30008C3E4 /* LoginAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAuthView.swift; sourceTree = "<group>"; };
+		FA02B6182B63F80F0008C3E4 /* MacButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacButtonStyles.swift; sourceTree = "<group>"; };
+		FA6DEBC92B84E7030091B495 /* Glob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glob.swift; sourceTree = "<group>"; };
+		FA6DEBCB2B84E7260091B495 /* GlobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobTests.swift; sourceTree = "<group>"; };
+		FA8B91C12B7318F200F6516C /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
+		FA8B91C82B732BA500F6516C /* LocalStorageKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorageKeys.swift; sourceTree = "<group>"; };
+		FAB591852B7626DB00B24A69 /* MockFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFileManager.swift; sourceTree = "<group>"; };
+		FAD011FF2B6675B30091C26C /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		FAF7E9F52B8B7CB80086D26B /* Scene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		FAF7E9F62B8B7CB80086D26B /* Color+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		FAF7E9F72B8B7CB80086D26B /* View+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+.swift"; sourceTree = "<group>"; };
+		FAF7E9FD2B8B7CD90086D26B /* AppString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppString.swift; sourceTree = "<group>"; };
+		FAF7E9FE2B8B7CD90086D26B /* ZHFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHFont.swift; sourceTree = "<group>"; };
+		FAF7EA002B8B7CD90086D26B /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		FAF7EA012B8B7CD90086D26B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		FAF7EA022B8B7CD90086D26B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		FAF7EA032B8B7CD90086D26B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		FAF7EA042B8B7CD90086D26B /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		FAF7EA052B8B7CD90086D26B /* ZHColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHColors.swift; sourceTree = "<group>"; };
+		FAF7EA302B8B815B0086D26B /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FAF7EA312B8B815B0086D26B /* SignupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		FAF7EA322B8B815B0086D26B /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA02B5DB2B63F7600008C3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8B03252B6517BD001323FC /* ZIPFoundation in Frameworks */,
+				FAD011FE2B6605AB0091C26C /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA02B5EC2B63F7630008C3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8B91C72B73270500F6516C /* Mocker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA02B5D52B63F7600008C3E4 = {
+			isa = PBXGroup;
+			children = (
+				FA02B5E02B63F7600008C3E4 /* ZataHub */,
+				FA02B5F22B63F7630008C3E4 /* ZataHubTests */,
+				FA02B5DF2B63F7600008C3E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA02B5DF2B63F7600008C3E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA02B5DE2B63F7600008C3E4 /* ZataHub.app */,
+				FA02B5EF2B63F7630008C3E4 /* ZataHubTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA02B5E02B63F7600008C3E4 /* ZataHub */ = {
+			isa = PBXGroup;
+			children = (
+				FA02B5EA2B63F7620008C3E4 /* ZataHub.entitlements */,
+				FA02B5E12B63F7600008C3E4 /* ZataHubApp.swift */,
+				FA02B5E52B63F7620008C3E4 /* Assets.xcassets */,
+				FAF7E9FB2B8B7CD90086D26B /* App */,
+				FAF7E9F42B8B7CB80086D26B /* Extensions */,
+				FA02B5E72B63F7620008C3E4 /* Preview Content */,
+				FAF7EA2F2B8B815B0086D26B /* Screens */,
+			);
+			path = ZataHub;
+			sourceTree = "<group>";
+		};
+		FA02B5E72B63F7620008C3E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FA02B5E82B63F7620008C3E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA02B5F22B63F7630008C3E4 /* ZataHubTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA02B5F32B63F7630008C3E4 /* ZataHubTests.swift */,
+				FA8B91C12B7318F200F6516C /* MockSession.swift */,
+				FAB591852B7626DB00B24A69 /* MockFileManager.swift */,
+				FA6DEBCB2B84E7260091B495 /* GlobTests.swift */,
+			);
+			path = ZataHubTests;
+			sourceTree = "<group>";
+		};
+		FAF7E9F42B8B7CB80086D26B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7E9F52B8B7CB80086D26B /* Scene.swift */,
+				FAF7E9F62B8B7CB80086D26B /* Color+.swift */,
+				FAF7E9F72B8B7CB80086D26B /* View+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAF7E9FB2B8B7CD90086D26B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAD011FF2B6675B30091C26C /* Device.swift */,
+				FA6DEBC92B84E7030091B495 /* Glob.swift */,
+				FA8B91C82B732BA500F6516C /* LocalStorageKeys.swift */,
+				FA02B6182B63F80F0008C3E4 /* MacButtonStyles.swift */,
+				FAF7EA052B8B7CD90086D26B /* ZHColors.swift */,
+				FAF7E9FC2B8B7CD90086D26B /* Resources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAF7E9FC2B8B7CD90086D26B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7E9FD2B8B7CD90086D26B /* AppString.swift */,
+				FAF7E9FE2B8B7CD90086D26B /* ZHFont.swift */,
+				FAF7E9FF2B8B7CD90086D26B /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAF7E9FF2B8B7CD90086D26B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7EA002B8B7CD90086D26B /* Poppins-Light.ttf */,
+				FAF7EA012B8B7CD90086D26B /* Poppins-Medium.ttf */,
+				FAF7EA022B8B7CD90086D26B /* Poppins-Regular.ttf */,
+				FAF7EA032B8B7CD90086D26B /* Poppins-Bold.ttf */,
+				FAF7EA042B8B7CD90086D26B /* Poppins-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FAF7EA2F2B8B815B0086D26B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				FA02B60C2B63F7A00008C3E4 /* InstallView.swift */,
+				FA02B6162B63F7F30008C3E4 /* LoginAuthView.swift */,
+				FAF7EA302B8B815B0086D26B /* LoginView.swift */,
+				FAF7EA312B8B815B0086D26B /* SignupView.swift */,
+				FAF7EA322B8B815B0086D26B /* LoadingView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA02B5DD2B63F7600008C3E4 /* ZataHub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA02B6032B63F7630008C3E4 /* Build configuration list for PBXNativeTarget "ZataHub" */;
+			buildPhases = (
+				FA02B5DA2B63F7600008C3E4 /* Sources */,
+				FA02B5DB2B63F7600008C3E4 /* Frameworks */,
+				FA02B5DC2B63F7600008C3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZataHub;
+			packageProductDependencies = (
+				FA8B03242B6517BD001323FC /* ZIPFoundation */,
+				FAD011FD2B6605AB0091C26C /* Alamofire */,
+			);
+			productName = ZataHub;
+			productReference = FA02B5DE2B63F7600008C3E4 /* ZataHub.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA02B5EE2B63F7630008C3E4 /* ZataHubTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA02B6062B63F7630008C3E4 /* Build configuration list for PBXNativeTarget "ZataHubTests" */;
+			buildPhases = (
+				FA02B5EB2B63F7630008C3E4 /* Sources */,
+				FA02B5EC2B63F7630008C3E4 /* Frameworks */,
+				FA02B5ED2B63F7630008C3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA02B5F12B63F7630008C3E4 /* PBXTargetDependency */,
+			);
+			name = ZataHubTests;
+			packageProductDependencies = (
+				FA8B91C62B73270500F6516C /* Mocker */,
+			);
+			productName = ZataHubTests;
+			productReference = FA02B5EF2B63F7630008C3E4 /* ZataHubTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA02B5D62B63F7600008C3E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FA02B5DD2B63F7600008C3E4 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					FA02B5EE2B63F7630008C3E4 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = FA02B5DD2B63F7600008C3E4;
+					};
+				};
+			};
+			buildConfigurationList = FA02B5D92B63F7600008C3E4 /* Build configuration list for PBXProject "ZataHub" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA02B5D52B63F7600008C3E4;
+			packageReferences = (
+				FA8B03232B6517BC001323FC /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				FAD011FC2B6605AB0091C26C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FA8B91C52B73270500F6516C /* XCRemoteSwiftPackageReference "Mocker" */,
+			);
+			productRefGroup = FA02B5DF2B63F7600008C3E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA02B5DD2B63F7600008C3E4 /* ZataHub */,
+				FA02B5EE2B63F7630008C3E4 /* ZataHubTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA02B5DC2B63F7600008C3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA02B5E92B63F7620008C3E4 /* Preview Assets.xcassets in Resources */,
+				FAF7EA0C2B8B7CD90086D26B /* Poppins-SemiBold.ttf in Resources */,
+				FAF7EA0B2B8B7CD90086D26B /* Poppins-Bold.ttf in Resources */,
+				FAF7EA092B8B7CD90086D26B /* Poppins-Medium.ttf in Resources */,
+				FAF7EA082B8B7CD90086D26B /* Poppins-Light.ttf in Resources */,
+				FA02B5E62B63F7620008C3E4 /* Assets.xcassets in Resources */,
+				FAF7EA0A2B8B7CD90086D26B /* Poppins-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA02B5ED2B63F7630008C3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA02B5DA2B63F7600008C3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA02B6192B63F80F0008C3E4 /* MacButtonStyles.swift in Sources */,
+				FAF7E9F92B8B7CB80086D26B /* Color+.swift in Sources */,
+				FAF7EA062B8B7CD90086D26B /* AppString.swift in Sources */,
+				FAF7EA332B8B815B0086D26B /* LoginView.swift in Sources */,
+				FAF7EA352B8B815B0086D26B /* LoadingView.swift in Sources */,
+				FAF7EA072B8B7CD90086D26B /* ZHFont.swift in Sources */,
+				FA6DEBCA2B84E7030091B495 /* Glob.swift in Sources */,
+				FA02B60D2B63F7A00008C3E4 /* InstallView.swift in Sources */,
+				FAF7E9FA2B8B7CB80086D26B /* View+.swift in Sources */,
+				FAD012002B6675B30091C26C /* Device.swift in Sources */,
+				FA02B6172B63F7F30008C3E4 /* LoginAuthView.swift in Sources */,
+				FA8B91C92B732BA500F6516C /* LocalStorageKeys.swift in Sources */,
+				FAF7EA342B8B815B0086D26B /* SignupView.swift in Sources */,
+				FAF7EA0D2B8B7CD90086D26B /* ZHColors.swift in Sources */,
+				FA02B5E22B63F7600008C3E4 /* ZataHubApp.swift in Sources */,
+				FAF7E9F82B8B7CB80086D26B /* Scene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA02B5EB2B63F7630008C3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA8B91C22B7318F200F6516C /* MockSession.swift in Sources */,
+				FAB591862B7626DB00B24A69 /* MockFileManager.swift in Sources */,
+				FA6DEBCC2B84E7260091B495 /* GlobTests.swift in Sources */,
+				FA02B5F42B63F7630008C3E4 /* ZataHubTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA02B5F12B63F7630008C3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA02B5DD2B63F7600008C3E4 /* ZataHub */;
+			targetProxy = FA02B5F02B63F7630008C3E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FA02B6012B63F7630008C3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA02B6022B63F7630008C3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FA02B6042B63F7630008C3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZataHub/ZataHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZataHub/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ZataHub;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zatahub.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA02B6052B63F7630008C3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ZataHub/ZataHub.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ZataHub/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ZataHub;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zatahub.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FA02B6072B63F7630008C3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zatahub.macos.ZataHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZataHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZataHub";
+			};
+			name = Debug;
+		};
+		FA02B6082B63F7630008C3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zatahub.macos.ZataHubTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZataHub.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ZataHub";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA02B5D92B63F7600008C3E4 /* Build configuration list for PBXProject "ZataHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA02B6012B63F7630008C3E4 /* Debug */,
+				FA02B6022B63F7630008C3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA02B6032B63F7630008C3E4 /* Build configuration list for PBXNativeTarget "ZataHub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA02B6042B63F7630008C3E4 /* Debug */,
+				FA02B6052B63F7630008C3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA02B6062B63F7630008C3E4 /* Build configuration list for PBXNativeTarget "ZataHubTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA02B6072B63F7630008C3E4 /* Debug */,
+				FA02B6082B63F7630008C3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA8B03232B6517BC001323FC /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.17;
+			};
+		};
+		FA8B91C52B73270500F6516C /* XCRemoteSwiftPackageReference "Mocker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WeTransfer/Mocker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.2;
+			};
+		};
+		FAD011FC2B6605AB0091C26C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA8B03242B6517BD001323FC /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8B03232B6517BC001323FC /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		FA8B91C62B73270500F6516C /* Mocker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA8B91C52B73270500F6516C /* XCRemoteSwiftPackageReference "Mocker" */;
+			productName = Mocker;
+		};
+		FAD011FD2B6605AB0091C26C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FAD011FC2B6605AB0091C26C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FA02B5D62B63F7600008C3E4 /* Project object */;
+}
